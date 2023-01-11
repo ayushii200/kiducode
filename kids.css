@@ -1,0 +1,603 @@
+:root{
+    --transition:all 0.7s ease;
+    --yellow: linear-gradient(rgba(128,0,32));
+    --dark: black;
+}
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Playfair Display', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.6;
+}
+h2{
+    color: orange;
+    margin-top: 30px;
+    padding: 10px;
+}
+.header img {
+    height: 100px;
+}
+.header{
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url("kids\ code.jpg")center/cover no-repeat;
+    min-height: 100vh; 
+
+}
+.header-nav {
+    display: flex;
+    position: fixed;
+    background:black;
+    width: 100%;
+    z-index: 100000;
+    height: 15vh;
+}
+.nav a:hover{
+    color:white;
+    background: orange;
+    transition: 0.6s ease;
+    transform: translateY(-10px);
+    border-radius: 30px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    padding: 12px 14px;
+    font-size: 18px;
+    color: white;
+}
+.nav li {
+    float: left;
+}
+ul {
+    list-style-type: none;
+    margin-top: 30px;
+    margin-left: 200px;
+    position: relative;
+}
+.menu{
+padding: 45px;
+margin: auto;
+margin-top: 2px;
+}
+.head-bottom{
+    flex: 1;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+.head-bottom h2{
+    padding: 22px 0;
+    font-size: 45px;
+    border-bottom: 1px solid white;
+}
+.head-bottom p{
+    opacity: 0.7;
+    font-size: 20px;
+    margin: 45px auto;
+    width: 60vw;
+    color: aliceblue;
+}
+.head-btn{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid white;
+    background: transparent;
+    padding: 13px 20px;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.head-btn:hover{
+    background: transparent;
+}
+.main{
+    text-align: center;
+    padding: 50px;
+}
+.btn{
+    margin: 20px 0;
+    border: 3px solid white;
+    color: white;
+    cursor: pointer;
+}
+.info{
+    margin-top: 40px;
+    padding: 40px 0;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("home_art.png")center/cover no-repeat fixed;
+}
+.intro{
+    background: white;
+    padding: 35px;
+    text-align: center;
+    margin: 24px 0;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.75);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.intro h3{
+    font-size: 25px;
+}
+.intro p{
+    opacity: 0.7;
+    line-height: 1.8;
+    width: 60%;
+    margin: 0 auto;
+}
+.intro img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin: 25px auto;
+}
+.intro span{
+    font-weight: 700;
+    opacity: 0.7;
+}
+.intro:hover{
+    transform: translateY(-30px);
+}
+@media(min-width: 992px){
+    .info-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+}
+@media(min-width: 1370px){
+    .info-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width: 500px){
+    .intro p{
+        width: 80%;
+    }
+    .intro img{
+        width: 100px;
+        height: 100px;
+    }
+}
+.fa-check{
+    color: rgb(144, 238, 144);
+}
+.extra{
+    margin: 40px 0;
+}
+.lab{
+    padding: 20px;
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5));
+    color:white;
+}
+.lab-text{
+    padding: 5px 20px;
+}
+.lab-text h3{
+    font-size: 24px;
+}
+.lab-image img{
+    transition: var(--transition);
+}
+.lab-image:hover img{
+    transform: scale(1.1);
+}
+@media(min-width :900px){
+    .extra-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .lab{
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+    }
+}
+@media(min-width: 1370){
+    .extra-container{
+        flex-direction:column ;
+    }
+    .lab{
+        display: flex;
+        padding-bottom: 0;
+        margin: 5px 0;
+    }
+    .lab-image img{
+        height: 30%;
+    }
+    .lab-text{
+        flex: 1;
+    }
+    .lab:nth-child(even){
+        flex-direction: row-reverse;
+    }
+}
+.info-2{
+    margin-top: 40px;
+    padding: 40px 0;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url("dance_party_2019.gif")center/cover no-repeat fixed;
+}
+.more{
+    background: white;
+    padding: 35px;
+    text-align: center;
+    margin: 24px 0;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.75);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.more h3{
+    font-size: 25px;
+    color: orange;
+}
+.more p{
+    opacity: 0.7;
+    line-height: 1.8;
+    width: 60%;
+    margin: 0 auto;
+}
+.more img{
+    width: 170px;
+    height: 170px;
+    margin: 25px auto;
+}
+.more span{
+    font-weight: 700;
+    opacity: 0.7;
+}
+@media(min-width: 992px){
+    .info-2-container{
+        display: grid;
+        grid-template-columns: repeat(2, 0.7fr);
+        grid-gap: 30px;
+    }
+}
+@media(min-width: 1370px){
+    .info-2-container{
+        display: grid;
+        grid-template-columns: repeat(3, 0.7fr);
+    }
+}
+@media(max-width: 500px){
+    .more p{
+        width: 80%;
+    }
+    .more img{
+        width: 100px;
+        height: 100px;
+    }
+}
+.teacher > h2 {
+    padding: 2rem 0rem;
+    color: orange;
+    font-size: 2rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: auto;
+  }
+  .teacher .teacher_wrapper {
+    margin: auto;
+    padding: 4rem 2rem;
+    max-width: 980px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+  }
+  .teacher .teacher_wrapper .card {
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: auto;
+    height: 100%;
+    text-align: center;
+    border: 1px grey solid;
+  }
+  .teacher .teacher_wrapper .card > .image {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    outline: 2px solid orange;
+  }
+  .teacher .teacher_wrapper .card > .image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .teacher .teacher_wrapper .card > h2 {
+    font-size: 1.2rem;
+    color:orange;
+    padding: 16px 0;
+    text-transform: uppercase;
+  }
+  .teacher .teacher_wrapper .card p {
+    font-size: 12px;
+    padding: 4px 0rem;
+  }
+
+  .testimonial {
+    padding: 4rem 0rem;
+  }
+  .testimonial h2 {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: auto;
+    color: #f0ab0a;
+    font-size: 2rem;
+  }
+  .testimonial .testimonial_wrapper {
+    max-width: 940px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    overflow-x: scroll;
+  }
+  .testimonial .testimonial_wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .testimonial .testimonial_wrapper .testimonial_item {
+    display: flex;
+    margin-right: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1rem;
+    width: 540px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #ffffff;
+  }
+  .testimonial .testimonial_wrapper .testimonial_item .testimonial_image {
+    margin: 0rem 1rem;
+    height: 70px;
+    width: 70px;
+    background-color: #1d1414;
+    border-radius: 50%;
+  }
+  .testimonial .testimonial_wrapper .testimonial_item .testimonial_image img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+  }
+  .testimonial .testimonial_wrapper .testimonial_item .testimonial_content {
+    position: relative;
+    width: 400px;
+    padding: 1rem;
+  }
+  .testimonial
+    .testimonial_wrapper
+    .testimonial_item
+    .testimonial_content::before {
+    content: "";
+    height: 100px;
+    width: 2px;
+    position: absolute;
+    top: 50%;
+    border-radius: 2px;
+    transform: translateY(-50%);
+    left: 0%;
+    opacity: 0.3;
+    background-color: #1d1414;
+  }
+  .testimonial .testimonial_wrapper .testimonial_item .testimonial_content h4 {
+    color: #f0ab0a;
+    font-size: 14px;
+  }
+  .testimonial .testimonial_wrapper .testimonial_item .testimonial_content p {
+    color: #1d1414;
+    font-size: 12px;
+    padding: 4px;
+  }
+  
+  .testimonials {
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+  }
+  .single-item {
+    background: #fff;
+    color: #111;
+    padding: 15px;
+    margin: 50px 15px;
+    border-radius: 40px;
+  }
+  .profile {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .img-area {
+    margin: 0 15px 15px 15px;
+  }
+  .img-area img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 7px solid rgb(226, 43, 43);
+  }
+  .content {
+    font-size: 18px;
+    border-left: 1px solid #a9a5a5;
+    padding-left: 25px;
+  }
+  .content p {
+    text-align: justify;
+  }
+  .content p span {
+    font-size: 48px;
+    margin-right: 20px;
+    color: rgb(226, 171, 43);
+  }
+  .socials i {
+    margin-right: 25px;
+  }
+  .bio h4 {
+    font-family: "Berkshire Swash", cursive;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    background-color: rgb(226, 183, 43);
+  }
+ 
+  .map h2 {
+    font-size: 2rem;
+    color: #f0ab0a;
+    text-align: center;
+  }
+  .map p {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 4rem auto 2rem auto;
+  }
+  .map p img {
+    width: 90vw;
+    max-width: 800px;
+    height: auto;
+  }
+
+  .footer{
+    background: var(--dark);
+    color: white;
+    text-align: center;
+}
+.footer-container{
+    width: 85vw;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.footer-container p, .footer-container a, .footer-container span{
+    opacity: 0.8;
+}
+.footer a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.social-icons{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+.social-icons li{
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    background:black ;
+    border-radius: 50%;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.social-icons li:hover{
+    background: white;
+    color: black;
+}
+.social-items span{
+    display: block;
+}
+@media(min-width: 900px){
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+@media(min-width: 1170px){
+    .footer{
+        text-align: left;
+    }
+    .footer-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .footer-container div:nth-child(1)p{
+        padding-right:20px;
+    }
+    .contact-item{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+}
+.showModal{
+    position: fixed;
+    background: transparent;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+@media(max-width: 500px){
+    body{
+        font-size: 14px;
+    }
+}
+@media(max-width: 500px){
+    .head-btn{
+        font-size: 15px;
+    }
+    .head-bottom h2{
+        font-size: 28px;
+    }
+    .head-bottom p{
+        font-size: 17px;
+        margin: 20px auto;
+    }
+}
+@media(max-width: 400px){
+    .sidenav{
+        width: 100vw;
+    }
+}
+@media(min-width: 992px){
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+    }
+}
+@media(max-width: 500px){
+    .title h2{
+        font-size: 24px;
+    }}
+    .why{
+        background-image: url('apply.webp');
+        background-repeat: no-repeat;
+        background-size: 25% 200px;
+        background-position: bottom 32% right 30%;
+        padding:40px;
+        background-color: black;
+        width: 90%;
+        margin-left: 50px;
+        border: 2px white solid;
+    }
+@media(max-width: 800px){
+       .header-nav .nav{
+            display: none;
+        }}
+@media(max-width: 500px){
+            .header-nav h2{
+                font-size: 20px;
+            }
+           .why {
+            background-size: 25% 140px;
+        background-position: bottom 2% right 10%;
+        padding:10px;
+    }
+    .teacher .teacher_wrapper .card > .image {
+        margin: auto;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        outline: 2px solid orange;  }
+    }
+
+
+
